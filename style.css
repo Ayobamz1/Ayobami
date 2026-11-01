@@ -52,7 +52,6 @@ body {
 /* Desktop Background (Clearer, lighter bloom) */
 .bg-desktop {
   /* background: radial-gradient(circle at center, #3a4874 0%, #05070b 100%); */
-  background-image: url(images/);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
