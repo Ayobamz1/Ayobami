@@ -52,7 +52,7 @@ body {
 /* Desktop Background (Clearer, lighter bloom) */
 .bg-desktop {
   /* background: radial-gradient(circle at center, #3a4874 0%, #05070b 100%); */
-  background-image: url(images/Windows\ 12\ .jpg);
+  background-image: url(images/);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -282,10 +282,18 @@ body {
   height: 9px;
   border-radius: 1px;
 }
-.logo-red    { background: #f25022; }
-.logo-green  { background: #7fba00; }
-.logo-blue   { background: #00a4ef; }
-.logo-yellow { background: #ffb900; }
+.logo-red {
+  background: #f25022;
+}
+.logo-green {
+  background: #7fba00;
+}
+.logo-blue {
+  background: #00a4ef;
+}
+.logo-yellow {
+  background: #ffb900;
+}
 
 /* --- Search box --- */
 .search-box {
@@ -363,7 +371,9 @@ body {
   height: 3px;
   border-radius: 3px;
   background: #60cdff;
-  transition: width 0.2s, left 0.2s;
+  transition:
+    width 0.2s,
+    left 0.2s;
 }
 
 /* OPEN or MAXIMIZED window -> long blue bar + soft highlight.
@@ -542,8 +552,12 @@ body {
   animation: fade-in 0.6s ease-out;
 }
 @keyframes fade-in {
-  from { opacity: 0; }
-  to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* =========================================================
@@ -610,14 +624,30 @@ body {
 
 /* One colour per icon. "stroke" is the colour of the SVG lines.
    These work for the desktop icons, the taskbar AND the Start menu. */
-.icon-blue svg   { stroke: #4fc3f7; }
-.icon-yellow svg { stroke: #ffd43b; }
-.icon-purple svg { stroke: #a78bfa; }
-.icon-green svg  { stroke: #4ade80; }
-.icon-orange svg { stroke: #fb923c; }
-.icon-pink svg   { stroke: #f472b6; }
-.icon-grey svg   { stroke: #cbd5e1; }
-.icon-teal svg   { stroke: #2dd4bf; }
+.icon-blue svg {
+  stroke: #4fc3f7;
+}
+.icon-yellow svg {
+  stroke: #ffd43b;
+}
+.icon-purple svg {
+  stroke: #a78bfa;
+}
+.icon-green svg {
+  stroke: #4ade80;
+}
+.icon-orange svg {
+  stroke: #fb923c;
+}
+.icon-pink svg {
+  stroke: #f472b6;
+}
+.icon-grey svg {
+  stroke: #cbd5e1;
+}
+.icon-teal svg {
+  stroke: #2dd4bf;
+}
 
 /* =========================================================
    STEP 2: THE REUSABLE WINDOW
@@ -651,14 +681,54 @@ body {
 
 /* --- Where each window starts, and how big it is ---
    To move a window, change its left / top numbers. */
-.win-about { left: 230px; top: 40px; width: 480px; height: 430px; }
-.win-projects { left: 190px; top: 40px; width: 880px; height: 560px; }
-.win-skills { left: 260px; top: 60px; width: 520px; height: 450px; }
-.win-resume { left: 290px; top: 30px; width: 640px; height: 520px; }
-.win-contact { left: 320px; top: 70px; width: 480px; height: 430px; }
-.win-notepad { left: 350px; top: 90px; width: 560px; height: 400px; }
-.win-settings { left: 360px; top: 130px; width: 520px; height: 360px; }
-.win-bin { left: 390px; top: 90px; width: 480px; height: 320px; }
+.win-about {
+  left: 230px;
+  top: 40px;
+  width: 480px;
+  height: 430px;
+}
+.win-projects {
+  left: 190px;
+  top: 40px;
+  width: 880px;
+  height: 560px;
+}
+.win-skills {
+  left: 260px;
+  top: 60px;
+  width: 520px;
+  height: 450px;
+}
+.win-resume {
+  left: 290px;
+  top: 30px;
+  width: 640px;
+  height: 520px;
+}
+.win-contact {
+  left: 320px;
+  top: 70px;
+  width: 480px;
+  height: 430px;
+}
+.win-notepad {
+  left: 350px;
+  top: 90px;
+  width: 560px;
+  height: 400px;
+}
+.win-settings {
+  left: 360px;
+  top: 130px;
+  width: 520px;
+  height: 360px;
+}
+.win-bin {
+  left: 390px;
+  top: 90px;
+  width: 480px;
+  height: 320px;
+}
 
 /* Each time a window opens it grows in a little, fades in,
    and the glass blur "focuses" from 0 to 14px */
@@ -672,7 +742,7 @@ body {
     transform: scale(1);
     opacity: 1;
     backdrop-filter: blur(14px);
-    }
+  }
 }
 
 /* How a window opens, minimizes, maximizes and closes is decided by
@@ -870,8 +940,14 @@ body {
   animation: menu-up 0.25s ease-out;
 }
 @keyframes menu-up {
-  from { transform: translateY(20px); opacity: 0; }
-  to   { transform: translateY(0);    opacity: 1; }
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* --- Search bar at the top --- */
@@ -1641,7 +1717,9 @@ body {
   animation: skill-grow 0.9s ease-out;
 }
 @keyframes skill-grow {
-  from { width: 0; }
+  from {
+    width: 0;
+  }
 }
 
 /* ---------- RESUME ---------- */
